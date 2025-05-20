@@ -30,35 +30,7 @@ cout.tie(0);
  int t;
  cin>>t;
  while(t--){
-   int n;
-    cin>>n;
-    vll v(n);
-    for0(i,n) cin>>v[i];
-
-    if(n==1) {
-        cout<<v[0]<<nl;
-        continue;
-    }
-
-    vll ans;
-    ll res = LLONG_MIN,sum=0;
-    for0(i,n){
-        sum+=v[i];
-    }
-    res = sum;
-    sum = 0;
-    while(n!=1){
-        for0(i,n){
-            ans.push_back(v[i+1]-v[i]);
-        }
-        for0(i,(ll)ans.size()){
-            sum+=ans[i];
-        }
-        ans.clear();
-        res = max(res,max(sum,-sum));
-        n--;
-    }
-    cout<<res<<nl;
+    cout<<"hi";
  }
   return 0;
  }
